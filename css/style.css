@@ -103,6 +103,9 @@ img {
 .experience-wrap__position {
 }
 .experience-wrap__time {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 .experience__duration,
 .education__duration,
