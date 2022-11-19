@@ -1,0 +1,208 @@
+:root {
+  --primary-text-color: #0e0c0c;
+  --secondary-text-color: #212121;
+  --white-text-color: #ffffff;
+  --accent-text-color: rgb(104, 97, 93);
+  --transparent-accent-text-color: rgba(161, 150, 145, 0.8);
+  --accent-background-color: rgb(161, 150, 145);
+  --transparent-background-color: rgba(161, 150, 145, 0.8);
+  --white-background-color: #ffffff;
+
+  --color-icon: #afb1b8;
+  --icon-background: rgba(255, 255, 255, 0.1);
+  --border-color: rgba(255, 255, 255, 0.3);
+  --border-input: rgba(33, 33, 33, 0.2);
+  --timing-funcshion: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--secondary-text-color);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  background-color: #fafafa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 1280px;
+  padding: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main-wrap {
+  width: 830px;
+  padding: 102px;
+  padding-bottom: 102px;
+  background-color: var(--white-background-color);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+.content-wrap {
+  margin-bottom: 40px;
+}
+.project__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+.project__link {
+  color: var(--primary-text-color);
+  transition: color 250ms var(--timing-funcshion);
+  font-size: 17px;
+}
+.project__link:hover,
+.project__link:focus {
+  color: var(--accent-text-color);
+}
+.project__description {
+  font-weight: 400;
+  font-size: 17px;
+}
+.experience__item:not(:last-child) {
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--transparent-background-color);
+}
+.experience__wrap {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+}
+.experience-wrap__position {
+}
+.experience-wrap__time {
+}
+.experience__duration,
+.education__duration,
+.add-education__duration {
+  font-weight: 400;
+  font-size: 14px;
+  margin-right: 0;
+  margin-left: auto;
+}
+.experience__description {
+  font-weight: 400;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+.education__item {
+  display: flex;
+  justify-content: space-between;
+}
+.education__item:not(:last-child) {
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--transparent-background-color);
+}
+.education__degree {
+  margin-bottom: 5px;
+}
+.education-wrap__position {
+}
+.add-education__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 1.25;
+  background-color: var(--transparent-background-color);
+
+  color: var(--secondary-text-color);
+}
+.main-wrap__title--pre {
+  background-color: var(--white-background-color);
+}
+.main-wrap__title--hero {
+  margin-bottom: 24px;
+  background-color: var(--white-background-color);
+  text-transform: uppercase;
+
+  font-size: 45px;
+  line-height: 1.22;
+}
+
+.main-wrap__description--date {
+  margin-right: auto;
+}
+.title--aside {
+  color: var(--white-text-color);
+}
+.subtitle {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+/* ASIDE */
+.aside-wrap {
+  width: 370px;
+  padding: 30px;
+  background-color: var(--transparent-background-color);
+}
+
+.image-wrap {
+  width: 310px;
+  height: 310px;
+  margin: 0 auto 40px;
+}
+.image {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.aside-content__list {
+}
+.aside-content__item {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 17px;
+}
+.aside-content__link {
+  display: block;
+  color: var(--primary-text-color);
+  transition: color 250ms var(--timing-funcshion);
+}
+.aside-content__link:hover,
+.aside-content__link:focus {
+  color: var(--accent-text-color);
+}
+.aside-content__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
